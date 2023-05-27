@@ -8,3 +8,31 @@
   justify-items:center;
   justify-content:center;
 }
+.view{
+  min-height:100vh;
+}
+main{
+  /* background-color: #4a8db1; */
+}
+header{
+  background-color: #4a8db1;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.hero{
+  aspect-ratio: 16/9;
+  background-image: url("/public/herobg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.hero h1{
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
