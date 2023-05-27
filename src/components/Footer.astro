@@ -1,0 +1,23 @@
+---
+const today = new Date();
+import NavLink from './NavLink.astro';
+---
+
+<footer class="top">
+	<section class="flex flex-row gap-10 basis-10">
+	<article class="flex-auto icon ">
+		<NavLink href="https://github.com/trivial-lore" target="_blank"><img src="/githublogo.svg" alt="github"></NavLink>
+	</article>
+	<article class="flex-auto icon" >
+		<NavLink href="https://twitter.com/triviallore" target="_blank"><img src="/twitlogo.svg" alt="twitter"></NavLink>
+	</article>
+	<article class="flex-auto icon ">
+		<NavLink href="https://youtube.com/@triviallore" target="_blank"> <img src="/ytlogo.svg" alt="youtube"></NavLink>
+	</article>
+	<article class="flex-auto icon">
+		<NavLink href="https://discord.gg/dJWz8Fddbv" target="_blank"> <img src="/discordlogo.svg" alt="discord"></NavLink>
+	</article>
+	
+	</section>
+	<p>&copy; {today.getFullYear()} Jeff King. All rights reserved.</p>
+</footer>

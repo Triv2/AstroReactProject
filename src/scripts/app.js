@@ -6,7 +6,7 @@ const passport = require('passport');
 const session = require('express-session');
 const bodyParser = require('body-parser');
 
-const User = require('./models/user');
+// const User = require('./models/user');
 
 const port = process.env.PORT || 3000;
 
