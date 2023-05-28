@@ -22,7 +22,7 @@ header{
 
 .hero{
   aspect-ratio: 16/9;
-  background-image: url("/public/herobg.svg");
+  background-image: url("/herobg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -48,3 +48,22 @@ header{
   background-color: #4a8db1;
   color:white;
 }
+
+/* animation section */
+@media(prefers-reduced-motion){
+  .fade{ transition:none;}
+}
+
+.fadeleft{
+
+  transition: all 1s;
+  filter:blur(5px);
+  transform:translateX(-100%);
+}
+
+.show{
+ 
+  filter:blur(0px);
+  transform: translateX(0);
+}
+

@@ -1,0 +1,10 @@
+// {
+//      "compileOnSave": {
+//       "baseUrl":"./",
+//       "paths":{
+//         "@components/*": ["components/*"],
+//         "@public/*": ["public/*"],
+//         "@sections/*": ["sections/*"],
+//       }
+//      }
+// }

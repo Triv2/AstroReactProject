@@ -1,180 +1,30 @@
 ---
 import Header from "../components/Header.astro";
+import HeroSection from "../components/sections/HeroSection.astro";
+import AboutSection from "../components/sections/AboutSection.astro";
+import FeatureSection from "../components/sections/FeatureSection.astro";
+import ExampleSection from "../components/sections/ExampleSection.astro";
+import TestimonialSection from "../components/sections/TestimonialSection.astro";
+import PricingSection from "../components/sections/PricingSection.astro";
+import ContactSection from "../components/sections/ContactSection.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <Header title="New" description="Setup"/>
 	<main>
-		<section id="hero" class="hero grid grid-cols-32 view mb-10">
-
-			<h1 class="text-white text-3xl p-10">Create without limits.</h1>
-			<h2 class="text-white text-3xl p-10">Bypass biology.</h2>
-			<h3 class="text-white text-3xl p-10">Enter Cybtech.</h3>
-		</section>
-		<section id="about" class="about gridcenter view mt-10">
-			<article class="view text-center">
-			<figcaption class="text-3xl p-10">Who are we?</figcaption>
-				<figure><img class="aboutimg" src="../public/about4.svg"/></figure>
-				</article>
-
-				<article class= "flex aboutarticle">
-				<figcaption class="text-3xl p-10 flex-auto">At Cybtech we here flourish on enhancements. We believe the future lies in the ability to process great amounts of information quickly.</figcaption>
-				<img class="aboutimg flex-auto p-10" src="../public/about1.svg"/>
-			</article>
-
-			  <article class= "flex aboutarticle">
-				<figure><img class="aboutimg flex-auto" src="../public/about3.svg"/></figure>
-				<figcaption class="text-3xl p-10 flex-auto">The ability to understand and analyze this data can be enhanced. Leading us to our motto. Enhance this, Enhance that.</figcaption>
-			</article>
-
-				<article class= "flex aboutarticle">
-				<figcaption class="text-3xl p-10 flex-auto">Why because it always works out.</figcaption>
-				<figure><img class="aboutimg flex-auto" src="../public/about2.svg"/></figure>
-			</article>
-
-				<article class= "flex aboutarticle">
-				<figure><img class="aboutimg flex-auto" src="../public/about5.svg"/></figure>
-				<figcaption class="text-3xl p-10 flex-auto">The difference between us and the competition? Our non-stop ability to maintain our course through problematic enterprises.</figcaption>
-			</article>
-
-				<img class="aboutimg" src="../public/about4.svg"/>
-
-		</section>
+		<HeroSection/>
 		<hr/>
-		<section id="features" class="features gridcenter grid-cols-3 gap-10 p-10 view">
-
-			<article class="p-10">
-				<figure class="mb-10"><img class="aboutimg" src="../public/example.svg"/></figure>
-				<figcaption class="text-2xl">Feature One brings about all the change you would ever need in your life.</figcaption>
-			</article>
-
-			<article class="p-10">
-				<figure class="mb-10 text-center"><img class="aboutimg" src="../public/example.svg"/></figure>
-				<figcaption class="text-2xl">Feature Two alters your genome to accept everything we can give.</figcaption>
-			</article>
-
-			<article class="p-10">
-				<figure class="mb-10"><img class="aboutimg" src="../public/example.svg"/></figure>
-				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
-			</article>
-
-
-		</section>
-		<section id="examples" class="examples gridcenter overflow-hidden view">
-			<article class="text-2xl">
-				<h2>Pick and Choose:</h2>
-				<p>Every part will work, guaranteed. Nothing to worry about.</p>
-				<p>There is no competition when you are the best.</p>
-			</article>
-
-			<section class="flex flex-nowrap overflow-scroll">
-				<article class= "flex-auto p-10">
-					<figure><img class="aboutimg" src="../public/arm1.svg"/></figure>
-				</article>
-
-				<article class= "flex-auto p-10">
-					<figure><img class="aboutimg"  src="../public/arm2.svg"/></figure>
-				</article>
-
-				<article class= "flex-auto p-10">
-					<figure><img class="aboutimg" src="../public/arm3.svg"/></figure>
-				</article>
-					
-				<article class= "flex-auto p-10">
-						<figure><img class="aboutimg" src="../public/leg1.svg"/></figure>
-					</article>
-			
-				<article class= "flex-auto p-10">
-					<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
-					</article>
-	
-					<article class= "flex-auto p-10">
-							<figure><img class="aboutimg" src="../public/leg3.svg"/></figure>
-						</article>
-							
-					<article class= "flex-auto p-10">
-						<figure><img  class="aboutimg" src="../public/leg4.svg"/></figure>
-					</article>
-								
-				
-								
-	
-
-			</section>
-		</section>
-		<section id="testimonials" class="testimonials gridcenter view">
-			<h2 class="text-3xl">Hear from our customers!</h2>
-			<section class="flex flex-nowrap">
-
-			<article class= "flex-auto p-10">
-				<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
-				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
-			</article>
-
-			<article class= "flex-auto p-10">
-				<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
-				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
-			</article>
-
-			</section>
-
-		</section>
-		
-		<section id="pricing" class="pricing gridcenter view">
-			<h2 class="text-3xl">Pricing</h2>
-			<section class="grid grid-cols-3 gap-10">
-
-				<article class="border-4 text-center p-10">
-					<h3>Tier 1</h3>
-					<p>Details about a Tier 1 purchase</p>
-					<ul>
-						<li>Perk 1</li>
-						<li>Perk 2</li>
-						<li>Perk 3</li>
-					</ul>
-					<h2>FREE TIER</h2>
-					<button>Purchase</button>
-				</article>
-
-				<article class="border-4 text-center p-10">
-					<h3>Tier 2</h3>
-					<p>Details about a Tier 2 purchase</p>
-					<ul>
-						<li>Perk 1</li>
-						<li>Perk 2</li>
-						<li>Perk 3</li>
-					</ul>
-					<h2>20 years of your life</h2>
-					<button>Purchase</button>
-				</article>
-
-				<article class="border-4 text-center p-10">
-					<h3>Tier 3</h3>
-					<p>Details about a Tier 3 purchase</p>
-					<ul>
-						<li>Perk 1</li>
-						<li>Perk 2</li>
-						<li>Perk 3</li>
-					</ul>
-					<h2>Contact Us</h2>
-					<button>CONTACT FOR QUOTE</button>
-				</article>
-
-
-
-
-			</section>
-		
-		</section>
-		<section id="contact" class="contact gridcenter view">
-			<h3>Contact Us</h3>
-			<form class="p-5">
-				<p class="mb-2">Please enter your email and a message.</p>
-				<input  type="text" name="email" value="email@example.com"/>
-				<input  type="text" name="message" value="Your message here"/>
-				<button>Submit</button>
-		</form>
-		</section>
-
+		<AboutSection/>
+		<hr/>
+		<FeatureSection/>
+		<hr/>
+		<ExampleSection/>
+		<hr/>
+		<TestimonialSection/>
+		<hr/>
+		<PricingSection/>
+		<hr/>
+		<ContactSection/>
+		<script src="../src/scripts/anim.js"/>
 	</main>
 	<Footer/>
