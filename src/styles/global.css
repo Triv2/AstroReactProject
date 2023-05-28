@@ -75,21 +75,14 @@ header{
 
 
 .features{
-  background-color: #4a8db1;
+  
+  background:url("/example.svg");
   color:white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width:100%
 }
-
-.featureimg{
-  max-width:250px;
-  max-height:250px;
-}
-
-
-
-
-
-
-
 
 
 

@@ -6,3 +6,54 @@ const {articleClass,figureClass,imgClass, figcaptionClass,figcaption, src} = Ast
   <figure class={figureClass}><img class={imgClass} src={src}/></figure>
   <figcaption class={figcaptionClass}>{figcaption}</figcaption>
 </article>
+<style>
+  figcaption {
+    border: 2px solid rgb(255, 255, 255); 
+    /* margin-left:20px;
+    margin-right:20px;*/
+    border-radius:20px;
+    font-size:2vw;
+    padding:20px;
+    background-color: #60b1cf;
+  }
+  img{
+    max-width:250px;
+    max-height:250px;
+    margin: 0 auto;
+    justify-content: center;
+    
+  }
+  figure{
+    background-color: #60b1cf;
+    border-radius:20px;
+    padding:10px;
+    border: 2px solid rgb(255, 252, 252);
+  }
+  article {
+    padding: 50px;
+    max-width:30%;
+    
+    background-color: #4a8db1;
+    border-radius:50px;
+  }
+  
+  
+@media screen and (max-width:1000px)  {
+  
+  figcaption{
+    max-width:100%;
+    font-size:4vw;
+  }
+  img{
+    max-width:25%;
+  }
+  article {
+    max-height:50%;
+    max-width:80%;
+}
+}
+
+
+
+  
+</style>
