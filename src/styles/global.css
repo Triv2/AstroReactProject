@@ -8,6 +8,9 @@
   justify-items:center;
   justify-content:center;
 }
+
+
+
 .view{
   min-height:100vh;
 }
@@ -18,7 +21,19 @@ header{
   background-color: #4a8db1;
   color: white;
   letter-spacing: 2px;
+  line-height: 1rem;
 }
+
+.content{
+  letter-spacing: 2px;
+  max-width: 650px;
+  margin: 0 auto;
+  justify-content: start;
+}
+
+
+
+/*first section*/
 
 .hero{
   aspect-ratio: 16/9;
@@ -36,6 +51,13 @@ header{
   letter-spacing: 2px;
   margin-bottom: 0;
 }
+
+
+
+
+/*second section*/
+
+
 .aboutimg{
   max-width:400px;
   max-height:400px;
@@ -44,10 +66,34 @@ header{
   align-items: center;
 
 }
+
+
+
+
+/*third section*/
+
+
+
+
 .features{
   background-color: #4a8db1;
   color:white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* animation section */
 @media(prefers-reduced-motion){

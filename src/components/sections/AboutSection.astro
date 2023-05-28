@@ -1,34 +1,51 @@
 ---
+import AboutCard from "../AboutCard.astro";
+const articleClassRight= "flex aboutarticle view  faderight";
+const articleClassLeft= "flex flex-row-reverse aboutarticle view  fadeleft";
+const figClass= "text-3xl p-10 flex-auto";
+const iClass= "aboutimg flex-auto";
 ---
 <section id="about" class="about gridcenter view mt-10 overflow-hidden">
 
   
-  <article class="view text-center fadeleft">
+  <article class="view gridcenter fadeleft content">
   <figcaption class="text-3xl p-10">Who are we?</figcaption>
     <figure><img class="aboutimg" src="./about4.svg"/></figure>
-    <h2 class="text-2xl"><em >Cybtech</em></h2>
+    <h2 class="text-4xl"><em >Cybtech</em></h2>
+    <p class="text-xl">A multi-dimensional trans-humanist cybernetic consortium that focuses on a push towards perfection.</p>
+    <p class="text-xl">With our four pronged approach to business and client relations, anyone can succeed within our structure.</p>
+    <p class="text-xl">Perfection has never been this affordable. With our subscription services, 
+      you merely need to let us copy your dna for cloning and serve in one of our subsidiary corporations for the time needed to pay off the debt.</p>
     </article>
     
 
-    
-    <article class=" flex aboutarticle view  faderight">
-    <figcaption class="text-3xl p-10 ">At Cybtech we here flourish on enhancements. We believe the future lies in the ability to process great amounts of information quickly.</figcaption>
-    <img class="aboutimg " src="./about1.svg"/>
-  </article>
-    
+    <AboutCard articleClass={articleClassRight}
+              figcaptionClass={figClass}
+              imgClass={iClass}
+              figcaption="At Cybtech we here flourish on enhancements. We believe the future lies in the ability to process great amounts of information quickly."
+              src="./about1.svg"
+              />
 
-    <article class= "flex aboutarticle fadeleft view">
-    <figure><img class="aboutimg flex-auto" src="./about3.svg"/></figure>
-    <figcaption class="text-3xl p-10 flex-auto">The ability to understand and analyze this data can be enhanced. Leading us to our motto. Enhance this, Enhance that.</figcaption>
-  </article>
+    <AboutCard articleClass={articleClassLeft}
+              figcaptionClass={figClass}
+              imgClass={iClass}
+              figcaption="The ability to understand and analyze this data can be enhanced. Leading us to our motto. Enhance this, Enhance that."
+              src="./about3.svg"
+              />
 
-    <article class= "flex aboutarticle faderight view">
-    <figcaption class="text-3xl p-10 flex-auto">Why because it always works out.</figcaption>
-    <figure><img class="aboutimg flex-auto" src="./about2.svg"/></figure>
-  </article>
+    <AboutCard articleClass={articleClassRight}
+             figcaptionClass={figClass}
+             imgClass={iClass}
+             figcaption="Why? Because it always works out."
+             src="./about2.svg"
+             />
 
-    <article class= "flex aboutarticle fadeleft view">
-    <figure><img class="aboutimg flex-auto" src="./about5.svg"/></figure>
-    <figcaption class="text-3xl p-10 flex-auto">The difference between us and the competition? Our non-stop ability to maintain our course through problematic enterprises.</figcaption>
-  </article>
+    <AboutCard articleClass={articleClassLeft}
+             figcaptionClass={figClass}
+             imgClass={iClass}
+             figcaption="The difference between us and the competition? Our non-stop ability to maintain our course through problematic enterprises."
+             src="./about5.svg"
+             />
+
+  
 </section>
