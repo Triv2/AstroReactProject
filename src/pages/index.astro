@@ -102,15 +102,78 @@ import Footer from "../components/Footer.astro";
 
 			</section>
 		</section>
-		<section id="topProducts" class="topProducts gridcenter view">
-		
+		<section id="testimonials" class="testimonials gridcenter view">
+			<h2 class="text-3xl">Hear from our customers!</h2>
+			<section class="flex flex-nowrap">
+
+			<article class= "flex-auto p-10">
+				<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
+				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
+			</article>
+
+			<article class= "flex-auto p-10">
+				<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
+				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
+			</article>
+
+			</section>
+
 		</section>
 		
 		<section id="pricing" class="pricing gridcenter view">
+			<h2 class="text-3xl">Pricing</h2>
+			<section class="grid grid-cols-3 gap-10">
+
+				<article class="border-4 text-center p-10">
+					<h3>Tier 1</h3>
+					<p>Details about a Tier 1 purchase</p>
+					<ul>
+						<li>Perk 1</li>
+						<li>Perk 2</li>
+						<li>Perk 3</li>
+					</ul>
+					<h2>FREE TIER</h2>
+					<button>Purchase</button>
+				</article>
+
+				<article class="border-4 text-center p-10">
+					<h3>Tier 2</h3>
+					<p>Details about a Tier 2 purchase</p>
+					<ul>
+						<li>Perk 1</li>
+						<li>Perk 2</li>
+						<li>Perk 3</li>
+					</ul>
+					<h2>20 years of your life</h2>
+					<button>Purchase</button>
+				</article>
+
+				<article class="border-4 text-center p-10">
+					<h3>Tier 3</h3>
+					<p>Details about a Tier 3 purchase</p>
+					<ul>
+						<li>Perk 1</li>
+						<li>Perk 2</li>
+						<li>Perk 3</li>
+					</ul>
+					<h2>Contact Us</h2>
+					<button>CONTACT FOR QUOTE</button>
+				</article>
+
+
+
+
+			</section>
 		
 		</section>
 		<section id="contact" class="contact gridcenter view">
-
+			<h3>Contact Us</h3>
+			<form class="p-5">
+				<p class="mb-2">Please enter your email and a message.</p>
+				<input  type="text" name="email" value="email@example.com"/>
+				<input  type="text" name="message" value="Your message here"/>
+				<button>Submit</button>
+		</form>
 		</section>
 
 	</main>
