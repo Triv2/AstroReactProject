@@ -41,55 +41,63 @@ import Footer from "../components/Footer.astro";
 
 		</section>
 		<hr/>
-		<section id="examples" class="examples gridcenter view">
-			<article>
-				<figure><img src="../public/example.svg"/></figure>
+		<section id="features" class="features gridcenter grid-cols-3 gap-10 p-10 view">
+
+			<article class="p-10">
+				<figure class="mb-10"><img class="aboutimg" src="../public/example.svg"/></figure>
+				<figcaption class="text-2xl">Feature One brings about all the change you would ever need in your life.</figcaption>
 			</article>
 
-			<section class="flex flex-nowrap">
+			<article class="p-10">
+				<figure class="mb-10 text-center"><img class="aboutimg" src="../public/example.svg"/></figure>
+				<figcaption class="text-2xl">Feature Two alters your genome to accept everything we can give.</figcaption>
+			</article>
+
+			<article class="p-10">
+				<figure class="mb-10"><img class="aboutimg" src="../public/example.svg"/></figure>
+				<figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
+			</article>
+
+
+		</section>
+		<section id="examples" class="examples gridcenter overflow-hidden view">
+			<article class="text-2xl">
+				<h2>Pick and Choose:</h2>
+				<p>Every part will work, guaranteed. Nothing to worry about.</p>
+				<p>There is no competition when you are the best.</p>
+			</article>
+
+			<section class="flex flex-nowrap overflow-scroll">
 				<article class= "flex-auto p-10">
 					<figure><img class="aboutimg" src="../public/arm1.svg"/></figure>
 				</article>
-				</section>
 
-			<section class="flex flex-nowrap">
-					<article class= "flex-auto p-10">
-						<figure><img class="aboutimg"  src="../public/arm2.svg"/></figure>
-					</article>
-					</section>
+				<article class= "flex-auto p-10">
+					<figure><img class="aboutimg"  src="../public/arm2.svg"/></figure>
+				</article>
 
-			<section class="flex flex-nowrap">
-						<article class= "flex-auto p-10">
-							<figure><img class="aboutimg" src="../public/arm3.svg"/></figure>
-						</article>
-						</section>
-
-			<section class="flex flex-nowrap">
-							<article class= "flex-auto p-10">
-								<figure><img class="aboutimg" src="../public/leg1.svg"/></figure>
-							</article>
-							</section>
-
-							<section class="flex flex-nowrap">
-								<article class= "flex-auto p-10">
-									<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
-								</article>
-								</section>
-				
-								<section class="flex flex-nowrap">
-									<article class= "flex-auto p-10">
-										<figure><img class="aboutimg" src="../public/leg3.svg"/></figure>
-									</article>
-									</section>
+				<article class= "flex-auto p-10">
+					<figure><img class="aboutimg" src="../public/arm3.svg"/></figure>
+				</article>
 					
+				<article class= "flex-auto p-10">
+						<figure><img class="aboutimg" src="../public/leg1.svg"/></figure>
+					</article>
 			
-			<section class="flex flex-nowrap">
-								<article class= "flex-auto p-10">
-									<figure><img  class="aboutimg" src="../public/leg4.svg"/></figure>
-								</article>
-								</section>
+				<article class= "flex-auto p-10">
+					<figure><img class="aboutimg" src="../public/leg2.svg"/></figure>
+					</article>
+	
+					<article class= "flex-auto p-10">
+							<figure><img class="aboutimg" src="../public/leg3.svg"/></figure>
+						</article>
+							
+					<article class= "flex-auto p-10">
+						<figure><img  class="aboutimg" src="../public/leg4.svg"/></figure>
+					</article>
+								
 				
-		
+								
 	
 
 			</section>
@@ -97,9 +105,7 @@ import Footer from "../components/Footer.astro";
 		<section id="topProducts" class="topProducts gridcenter view">
 		
 		</section>
-		<section id="features" class="features gridcenter view">
-
-		</section>
+		
 		<section id="pricing" class="pricing gridcenter view">
 		
 		</section>
