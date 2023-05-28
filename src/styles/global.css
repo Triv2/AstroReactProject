@@ -36,3 +36,7 @@ header{
   letter-spacing: 2px;
   margin-bottom: 0;
 }
+.aboutimg{
+  max-width:400px;
+  max-height:400px;
+}
