@@ -1,0 +1,30 @@
+---
+const {articleClass,src}=Astro.props;
+---
+<article class= {articleClass}>
+  <figure ><img src={src}/></figure>
+</article>
+<style>
+   img{
+  max-width:15%;
+  }
+  
+  article {
+    max-width:25%;
+   
+  }
+  
+  
+@media screen and (max-width:1000px)  {
+  
+ 
+  img{
+    max-width:100%;
+  }
+  article {
+    max-height:100%;
+    max-width:100%;
+}
+}
+
+</style>
