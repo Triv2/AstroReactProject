@@ -12,20 +12,31 @@ import Footer from "../components/Footer.astro";
 			<h3 class="text-white text-3xl p-10">Enter Cybtech.</h3>
 		</section>
 		<section id="about" class="about gridcenter view mt-10">
-			<article>
+			<article class="view text-center">
 			<figcaption class="text-3xl p-10">Who are we?</figcaption>
 				<figure><img class="aboutimg" src="../public/about4.svg"/></figure>
 				</article>
-				<article>
-				<img class="aboutimg" src="../public/about1.svg"/>
-				<p class="text-3xl p-10">At Cybtech we here flourish on enhancements. We believe the future lies in the ability to process great amounts of information quickly.</p>
-			  </article>
-				
-				<img class="aboutimg" src="../public/about2.svg"/>
-				<img class="aboutimg" src="../public/about3.svg"/>
-				<p class="text-3xl p-10">The ability to understand and analyze this data can be enhanced. Leading us to our motto. Enhance this, Enhance that. Why because it always works out.</p>
-				<img class="aboutimg" src="../public/about5.svg"/>
-				<p class="text-3xl p-10">The difference between us and the competition? Our non-stop ability to maintain our course through problematic enterprises.</p>
+
+				<article class= "flex aboutarticle">
+				<figcaption class="text-3xl p-10 flex-auto">At Cybtech we here flourish on enhancements. We believe the future lies in the ability to process great amounts of information quickly.</figcaption>
+				<img class="aboutimg flex-auto p-10" src="../public/about1.svg"/>
+			</article>
+
+			  <article class= "flex aboutarticle">
+				<figure><img class="aboutimg flex-auto" src="../public/about3.svg"/></figure>
+				<figcaption class="text-3xl p-10 flex-auto">The ability to understand and analyze this data can be enhanced. Leading us to our motto. Enhance this, Enhance that.</figcaption>
+			</article>
+
+				<article class= "flex aboutarticle">
+				<figcaption class="text-3xl p-10 flex-auto">Why because it always works out.</figcaption>
+				<figure><img class="aboutimg flex-auto" src="../public/about2.svg"/></figure>
+			</article>
+
+				<article class= "flex aboutarticle">
+				<figure><img class="aboutimg flex-auto" src="../public/about5.svg"/></figure>
+				<figcaption class="text-3xl p-10 flex-auto">The difference between us and the competition? Our non-stop ability to maintain our course through problematic enterprises.</figcaption>
+			</article>
+
 				<img class="aboutimg" src="../public/about4.svg"/>
 
 		</section>
