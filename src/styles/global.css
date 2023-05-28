@@ -15,7 +15,7 @@
   min-height:100vh;
 }
 main{
-  /* background-color: #4a8db1; */
+   /* background-color: #76666c7c; */
 }
 header{
   background-color: #4a8db1;
@@ -41,6 +41,7 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width:100%
   
 }
 
@@ -58,12 +59,10 @@ header{
 /*second section*/
 
 
-.aboutimg{
-  max-width:400px;
-  max-height:400px;
-}
+
 .aboutarticle{
   align-items: center;
+  background-color: #60b1cf;
 
 }
 
@@ -80,8 +79,10 @@ header{
   color:white;
 }
 
-
-
+.featureimg{
+  max-width:250px;
+  max-height:250px;
+}
 
 
 

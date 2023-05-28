@@ -1,0 +1,8 @@
+---
+const {articleClass,figureClass,imgClass, figcaptionClass,figcaption, src} = Astro.props;
+---
+
+<article class={articleClass}>
+  <figure class={figureClass}><img class={imgClass} src={src}/></figure>
+  <figcaption class={figcaptionClass}>{figcaption}</figcaption>
+</article>

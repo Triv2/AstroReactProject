@@ -2,20 +2,23 @@
 import AboutCard from "../AboutCard.astro";
 const articleClassRight= "flex aboutarticle view  faderight";
 const articleClassLeft= "flex flex-row-reverse aboutarticle view  fadeleft";
-const figClass= "text-3xl p-10 flex-auto";
-const iClass= "aboutimg flex-auto";
+const figClass= " p-10 flex-auto shadow-lg bg-slate-100 radius-50";
+const iClass= "";
 ---
 <section id="about" class="about gridcenter view mt-10 overflow-hidden">
 
   
   <article class="view gridcenter fadeleft content">
-  <figcaption class="text-3xl p-10">Who are we?</figcaption>
+  <figcaption class="text-3xl p-10 underline">Who are we?</figcaption>
     <figure><img class="aboutimg" src="./about4.svg"/></figure>
-    <h2 class="text-4xl"><em >Cybtech</em></h2>
+    
+    <h2 class="text-4xl mb-5 mt-5"><em >Cybtech</em></h2>
+    <figcaption class ={figClass}>
     <p class="text-xl">A multi-dimensional trans-humanist cybernetic consortium that focuses on a push towards perfection.</p>
     <p class="text-xl">With our four pronged approach to business and client relations, anyone can succeed within our structure.</p>
     <p class="text-xl">Perfection has never been this affordable. With our subscription services, 
       you merely need to let us copy your dna for cloning and serve in one of our subsidiary corporations for the time needed to pay off the debt.</p>
+    </figcaption>
     </article>
     
 

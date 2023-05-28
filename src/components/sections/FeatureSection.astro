@@ -1,21 +1,34 @@
 ---
+import FeatureCard from "../FeatureCard.astro";
+const article="p-10 flex-auto";
+const figure= "mb-10";
+const img="aboutimg";
+const figcap ="text-2xl";
 ---
-<section id="features" class="features gridcenter grid-cols-3 gap-10 p-10 view">
+<section id="features" class="features gridcenter flex flex-row gap-10 p-10 view">
 
-  <article class="p-10">
-    <figure class="mb-10"><img class="aboutimg" src="./example.svg"/></figure>
-    <figcaption class="text-2xl">Feature One brings about all the change you would ever need in your life.</figcaption>
-  </article>
+  <FeatureCard articleClass={article}
+               figureClass={figure}
+               imgClass={img}
+               figcaptionClass={figcap}
+               src="./arm1.svg"
+               figcaption= "Feature One brings about all the change you would ever need in your life."
+                />
 
-  <article class="p-10">
-    <figure class="mb-10 text-center"><img class="aboutimg" src="./example.svg"/></figure>
-    <figcaption class="text-2xl">Feature Two alters your genome to accept everything we can give.</figcaption>
-  </article>
+  <FeatureCard articleClass={article}
+                figureClass={figure}
+                imgClass={img}
+                figcaptionClass={figcap}
+                src="./arm1.svg"
+                figcaption= "Feature Two alters your genome to accept everything we can give.     "
+                 />
 
-  <article class="p-10">
-    <figure class="mb-10"><img class="aboutimg" src="./example.svg"/></figure>
-    <figcaption class="text-2xl">Feature Three burns out all your neurons. Depleting your mind of all willpower.</figcaption>
-  </article>
-
+  <FeatureCard articleClass={article}
+                 figureClass={figure}
+                 imgClass={img}
+                 figcaptionClass={figcap}
+                 src="./arm1.svg"
+                 figcaption= "Feature Three burns out all your neurons. Depleting your mind of all willpower."
+                  />
 
 </section>
