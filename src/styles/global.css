@@ -66,6 +66,14 @@ header{
   
 
 }
+.aboutbg{
+  background-image: url("/aboutbg3.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:center;
+  max-width:100%;
+  
+}
 
 /* .box {
   height: 80vh;
@@ -76,11 +84,13 @@ header{
 
 .effect {
    /* width: 500ch;  */
-  transition: all 2s ease-in-out;
-  animation: typing 4s steps(2000), effect 3s step-end infinite alternate;
+  /* transition: all 12s ease-in-out; */
+  
+  /* animation: effect 0.8s step-end infinite alternate; */
   /* white-space: nowrap; */
   /* overflow: hidden; */
   border-right: 3px solid;
+  border-left: 3px solid;
   font-family: monospace;
   /* font-size: 2em; */
 }
