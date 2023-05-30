@@ -1,0 +1,14 @@
+---
+const{title, description, perkOne, perkTwo, perkThree, cost, button} = Astro.props;
+---
+<article class="border-4 text-center p-10">
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <ul>
+    <li>{perkOne}</li>
+    <li>{perkTwo}</li>
+    <li>{perkThree}</li>
+  </ul>
+  <h2>{cost}</h2>
+  <button>{button}</button>
+</article>

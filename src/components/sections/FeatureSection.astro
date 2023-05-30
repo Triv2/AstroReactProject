@@ -6,7 +6,7 @@ const figure= "mb-10 shadow-lg";
 const img="";
 const figcap ="text-2xl shadow-lg";
 ---
-<section id="features" class="features gridcenter flex flex-row flex-wrap gap-10 p-10 view">
+<section id="features" class="features gridcenter grid-cols-2 grid-rows-3 gap-10 p-10 view">
 
   <FeatureCard articleClass={articleRight}
                figureClass={figure}
@@ -25,6 +25,30 @@ const figcap ="text-2xl shadow-lg";
                  />
 
   <FeatureCard articleClass={articleRight}
+                 figureClass={figure}
+                 imgClass={img}
+                 figcaptionClass={figcap}
+                 src="./arm1.svg"
+                 figcaption= "Step Three burns out all your neurons. Depleting your mind of all willpower."
+                  />
+
+  <FeatureCard articleClass={articleLeft}
+               figureClass={figure}
+               imgClass={img}
+               figcaptionClass={figcap}
+               src="./arm1.svg"
+               figcaption= "Step One brings about all the change you would ever need in your life."
+                />
+
+  <FeatureCard articleClass={articleRight}
+                figureClass={figure}
+                imgClass={img}
+                figcaptionClass={figcap}
+                src="./arm1.svg"
+                figcaption= "Step Two alters your genome to accept everything we can give.     "
+                 />
+
+  <FeatureCard articleClass={articleLeft}
                  figureClass={figure}
                  imgClass={img}
                  figcaptionClass={figcap}

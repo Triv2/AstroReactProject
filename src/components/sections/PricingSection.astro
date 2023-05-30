@@ -1,45 +1,52 @@
 ---
+import PricingCard from "../PricingCard.astro";
+const tierOne = ({ title:"The Free Tier", 
+                   description:"This is a free tier for the cybtech cybernetics implants",
+                   perkOne:"Two implants with a single year of free maintenance!",
+                   perkTwo:"Access to our member dashboard to view enhanced biometric features.",
+                   perkThree: "Access to our bargain network with access to deals not available to the public!",
+                   cost: "FREE",
+                   button: "Sign up!"})
+const tierTwo = ({ title:"The Free Tier", 
+                   description:"This is a free tier for the cybtech cybernetics implants",
+                   perkOne:"Two implants with a single year of free maintenance!",
+                   perkTwo:"Access to our member dashboard to view enhanced biometric features.",
+                   perkThree: "Access to our bargain network with access to deals not available to the public!",
+                   cost: "FREE",
+                   button: "Sign up!"})
 ---
 <section id="pricing" class="pricing gridcenter view">
   <h2 class="text-3xl">Pricing</h2>
   <section class="grid grid-cols-3 gap-10">
 
-    <article class="border-4 text-center p-10">
-      <h3>Tier 1</h3>
-      <p>Details about a Tier 1 purchase</p>
-      <ul>
-        <li>Perk 1</li>
-        <li>Perk 2</li>
-        <li>Perk 3</li>
-      </ul>
-      <h2>FREE TIER</h2>
-      <button>Purchase</button>
-    </article>
 
-    <article class="border-4 text-center p-10">
-      <h3>Tier 2</h3>
-      <p>Details about a Tier 2 purchase</p>
-      <ul>
-        <li>Perk 1</li>
-        <li>Perk 2</li>
-        <li>Perk 3</li>
-      </ul>
-      <h2>20 years of your life</h2>
-      <button>Purchase</button>
-    </article>
-
-    <article class="border-4 text-center p-10">
-      <h3>Tier 3</h3>
-      <p>Details about a Tier 3 purchase</p>
-      <ul>
-        <li>Perk 1</li>
-        <li>Perk 2</li>
-        <li>Perk 3</li>
-      </ul>
-      <h2>Contact Us</h2>
-      <button>CONTACT FOR QUOTE</button>
-    </article>
-
+    <PricingCard title={tierOne.title} 
+                 description={tierOne.description} 
+                 perkOne={tierOne.perkOne} 
+                 perkTwo={tierOne.perkTwo} 
+                 perkThree={tierOne.perkThree} 
+                 cost={tierOne.cost}
+                 button={tierOne.button}
+                 />
+    
+    <PricingCard title={tierOne.title} 
+                 description={tierOne.description} 
+                 perkOne={tierOne.perkOne} 
+                 perkTwo={tierOne.perkTwo} 
+                 perkThree={tierOne.perkThree} 
+                 cost={tierOne.cost}
+                 button={tierOne.button}
+                 />
+                
+   <PricingCard title={tierOne.title} 
+                 description={tierOne.description} 
+                 perkOne={tierOne.perkOne} 
+                 perkTwo={tierOne.perkTwo} 
+                 perkThree={tierOne.perkThree} 
+                 cost={tierOne.cost}
+                 button={tierOne.button}
+                 />
+   
 
 
 
