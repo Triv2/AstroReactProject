@@ -1,0 +1,42 @@
+---
+const {figcaption,src} = Astro.props;
+---
+<article class= "flex-auto p-10">
+  <figure><img src={src}/></figure>
+  <figcaption class="text-2xl">{figcaption}</figcaption>
+</article>
+<style>
+   figcaption {
+    /* border: 2px solid rgb(78, 78, 78); */
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:20px;
+    font-size:2vw;
+    max-width:50%;
+    
+  }
+  img{
+    max-width:400px;
+    max-height:400px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  
+@media screen and (max-width:1000px)  {
+  
+  figcaption{
+    max-width:50%;
+    font-size:4vw;
+  }
+  img{
+    max-width:100%;
+  }
+}
+
+
+  article {
+    padding: 50px;
+  }
+  
+</style>
