@@ -15,7 +15,7 @@
   min-height:100vh;
 }
 main{
-   /* background-color: #76666c7c; */
+   /* background: linear-gradient(#2596be,#032879,#0645ce,#010c24); */
 }
 header{
   background-color: #4a8db1;
@@ -54,7 +54,9 @@ header{
 }
 
 
-
+.gradientbg{
+  background: linear-gradient(#2596be,#032879,#0645ce,#010c24);
+}
 
 /*second section*/
 
@@ -66,14 +68,41 @@ header{
   
 
 }
+.aboutimg{
+  max-width:20%;
+  max-height:20%;
+}
 .aboutbg{
-  background-image: url("/aboutbg3.svg");
+  aspect-ratio: 16/9;
+  background-image: url("/aboutbg4.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform:scaleY(-1);
+  background-position:center;
+  max-width:100%;
+  
+}
+
+.aboutbg2{
+  aspect-ratio: 16/9;
+  background-image: url("/aboutbg4.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position:center;
   max-width:100%;
   
 }
+
+.orbbg{
+  aspect-ratio:16/9;
+  background-image: url("/orbbg1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position:center;
+  max-width:100%;
+  
+}
+
 
 /* .box {
   height: 80vh;
@@ -115,7 +144,7 @@ header{
 
 .features{
   
-  background:url("/example.svg");
+  background:url("/aboutbg3.svg");
   color:white;
   background-repeat: no-repeat;
   background-size: cover;

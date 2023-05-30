@@ -1,18 +1,18 @@
 ---
 import AboutCard from "../AboutCard.astro";
-const articleClassRight= "flex aboutarticle view box faderight";
-const articleClassLeft= "flex flex-row-reverse aboutarticle view box  fadeleft";
-const figClass= " p-10 flex-auto shadow-lg bg-slate-100 radius-50 effect";
+const articleClassRight= "flex aboutarticle aboutbg view box faderight";
+const articleClassLeft= "flex flex-row-reverse aboutarticle view box aboutbg2 fadeleft";
+const figClass= " p-10 flex-auto shadow-lg bg-slate-100 radius-50 ";
 const iClass= "";
 ---
-<section id="about" class="about aboutbg gridcenter view mt-10 overflow-hidden">
+<section id="about" class="about gradientbg gridcenter view mt-10 overflow-hidden">
 
   
-  <article class="view gridcenter fadeleft content">
-  <figcaption class="text-3xl p-10 underline">Who are we?</figcaption>
-    <figure><img class="aboutimg" src="./about4.svg"/></figure>
+  <article class="view gridcenter fadeleft orbbg content">
+  <figcaption class="text-3xl p-10 underline shadow-lg text-white">Who are we?</figcaption>
+    <!-- <figure><img class="aboutimg" src="./about4.svg"/></figure> -->
     
-    <h2 class="text-4xl mb-5 mt-5"><em >Cybtech</em></h2>
+    <h2 class="text-5xl mb-5 text-white mt-5 shadow-lg"><em >Cybtech</em></h2>
     <figcaption class ={figClass}>
     <p class="text-xl">A multi-dimensional trans-humanist cybernetic consortium that focuses on a push towards perfection.</p>
     <p class="text-xl">With our four pronged approach to business and client relations, anyone can succeed within our structure.</p>
