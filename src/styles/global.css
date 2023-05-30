@@ -62,11 +62,40 @@ header{
 
 .aboutarticle{
   align-items: center;
-  background-color: #60b1cf;
+  /* background-color: #60b1cf; */
+  
 
 }
 
+/* .box {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
+.effect {
+   /* width: 500ch;  */
+  transition: all 2s ease-in-out;
+  animation: typing 4s steps(2000), effect 3s step-end infinite alternate;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  border-right: 3px solid;
+  font-family: monospace;
+  /* font-size: 2em; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
 
 
 /*third section*/
