@@ -4,7 +4,11 @@ const {articleClass,figcaptionClass,imgClass,src,figcaption} = Astro.props;
 
 <article class={articleClass}>
   <figcaption class={figcaptionClass}>{figcaption}</figcaption>
-  <figure><img class={imgClass} src={src}/></figure>
+  <figure class="flex-auto"><img loading="lazy" 
+   
+    
+    decoding="async"
+    class={imgClass} src={src}/></figure>
 </article>
 <style>
   figcaption {
@@ -15,10 +19,11 @@ const {articleClass,figcaptionClass,imgClass,src,figcaption} = Astro.props;
     font-size:2vw;
   }
   img{
-    max-width:400px;
-    max-height:400px;
+    max-width:300px;
+    max-height:300px;
     margin: 0 auto;
     justify-content: center;
+    
   }
  
   
