@@ -1,14 +1,158 @@
 ---
 
 ---
-<section id="Perks" class="view">
+<section id="Perks" class="view gridPerk">
 
-  <section>
-    <article>
-      <figure><picture></picture>
-        <figcaption></figcaption>
-      </figure>
+  
+    <article class = "item">
+      <figcaption>One</figcaption>
+      <figure class="img-wrapper"><img src="/example.svg"/></figure>
     </article>
-  </section>
+    
+    <article class = "item">
+      <figcaption>Two</figcaption>
+      <figure class="img-wrapper"><img src="/example.svg"/></figure>
+    </article>
 
+    <article class = "item">
+      <figcaption>Three</figcaption>
+      <figure class="img-wrapper"><img src="/example.svg"/></figure>
+    </article>
+
+    <article class = "item">
+      <figcaption>Four</figcaption>
+      <figure class="img-wrapper"><img src="/example.svg"/></figure>
+    </article>
+<link href="/anim.js"/>
 </section>
+<style>
+ body {
+  font-family: Merriweather, serif;
+  margin: 0;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #1b1f21;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms;
+  pointer-events: none;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.grid {
+  --track: 1;
+  display: grid;
+  max-width: 85rem;
+  width: 100%;
+  transition: grid-template 300ms;
+}
+
+.item {
+  --i: 0.5rem;
+  --c1: deeppink;
+  --c2: orange;
+  
+  background: repeating-linear-gradient(var(--a, 45deg), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2));
+  display: grid;
+  place-items: center;
+  grid-template: 1fr / 1fr var(--innerTrack, 0);
+  overflow: hidden;
+  aspect-ratio: 8 / 3;
+  transition: filter 200ms;
+}
+
+.item:hover {
+  grid-template: 1fr / 1fr var(--innerTrack, 0);
+}
+
+.item:hover img {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.item:nth-child(2),
+.item:nth-child(3) {
+  --c2: darkorchid;
+  --p: 50% 100%;
+  background: repeating-radial-gradient(circle at var(--p), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2));
+}
+
+.item:nth-child(3) {
+  --p: 50% 0;
+  --c1: cornflowerblue;
+}
+
+.item:nth-child(4) {
+  --a: -45deg;
+  --c1: cornflowerblue;
+  --c2: turquoise;
+}
+
+.item figcaption {
+  background: black;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  font-size: clamp(1.1rem, 5vmin, 2.8rem);
+  transition: opacity 300ms;
+}
+
+
+.gridPerk:has(.item:first-child:hover) .item:not(:first-child),
+.gridPerk:has(.item:nth-child(2):hover) .item:not(:nth-child(2)),
+.gridPerk:has(.item:nth-child(3):hover) .item:not(:nth-child(3)),
+.gridPerk:has(.item:nth-child(4):hover) .item:not(:nth-child(4)) {
+  filter: grayscale(10%) brightness(250%) contrast(30%);
+}
+
+.gridPerk:has(.item:first-child:hover) .item:not(:first-child) p,
+.gridPerk:has(.item:nth-child(2):hover) .item:not(:nth-child(2)) p,
+.gridPerk:has(.item:nth-child(3):hover) .item:not(:nth-child(3)) p,
+.gridPerk:has(.item:nth-child(4):hover) .item:not(:nth-child(4)) p {
+  opacity: 0;
+}
+
+@media (min-width: 50em) {
+  .gridPerk {
+    grid-template: 1fr 1fr / 1fr 1fr;
+    aspect-ratio: 2 / 1;
+  }
+  
+  .item {
+    aspect-ratio: auto;
+  }
+  
+  .gridPerk:has(.item:first-child:hover) {
+    grid-template: var(--track) 1fr / var(--track) 1fr;
+  }
+
+  .gridPerk:has(.item:nth-child(2):hover) {
+    grid-template: var(--track) 1fr / 1fr var(--track);
+  }
+
+  .gridPerk:has(.item:nth-child(3):hover) {
+    grid-template: 1fr var(--track) / var(--track) 1fr;
+  }
+
+  .gridPerk:has(.item:nth-child(4):hover) {
+    grid-template: 1fr var(--track) / 1fr var(--track);
+  }
+}
+</style>

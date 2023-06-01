@@ -22,3 +22,33 @@ animateElements.forEach((el)=> observer.observe(el));
 const animateElements1 = document.querySelectorAll('.faderight');
 animateElements1.forEach((el)=> observer.observe(el));
 // entry.target.classList.toggle('show',entry.isIntersecting);
+
+
+
+// Code for perk section image slider animations
+const grid = document.querySelector('.grid')
+const items = document.querySelectorAll('.item')
+
+items.forEach((item) => {
+  item.addEventListener('mouseenter', () => {
+    gsap.to(grid, {
+      '--track': '2fr',
+      duration: 0.3,
+    })
+    gsap.to(item, {
+      '--innerTrack': '1fr',
+      duration: 0.3,
+    })
+  })
+
+  item.addEventListener('mouseleave', () => {
+    gsap.to(grid, {
+      '--track': '1fr',
+      duration: 0.3,
+    })
+    gsap.to(item, {
+      '--innerTrack': '0fr',
+      duration: 0.3,
+    })
+  })
+})
