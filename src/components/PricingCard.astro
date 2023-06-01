@@ -1,14 +1,18 @@
 ---
 const{title, description, perkOne, perkTwo, perkThree, cost, button} = Astro.props;
 ---
-<article class="border-4 text-center p-10">
-  <h3>{title}</h3>
+<article class="border-4 text-center bg-slate-300 content p-10">
+  <h3 class="bg-slate-600 text-white mb-5">{title}</h3>
+  <hr/>
   <p>{description}</p>
+  <hr/>
   <ul>
     <li>{perkOne}</li>
     <li>{perkTwo}</li>
     <li>{perkThree}</li>
   </ul>
+  <hr/>
   <h2>{cost}</h2>
+  <hr/>
   <button>{button}</button>
 </article>
