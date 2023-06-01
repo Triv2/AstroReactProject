@@ -1,4 +1,4 @@
-
+import {gsap} from 'gsap';
 
 
 
@@ -26,7 +26,7 @@ animateElements1.forEach((el)=> observer.observe(el));
 
 
 // Code for perk section image slider animations
-const grid = document.querySelector('.grid')
+const grid = document.querySelector('.gridPerk')
 const items = document.querySelectorAll('.item')
 
 items.forEach((item) => {
