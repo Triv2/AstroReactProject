@@ -46,6 +46,19 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    cart: {
+        type: Array,
+        default: [],
+        required: true,
+        unique: true,
+        sparse: true,
+        validate: {
+            validator: function (v) {
+                return v.length > 0;
+            },
+            message: 'Please enter a valid value'
+        }
     }
 });
 
