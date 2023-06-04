@@ -192,15 +192,6 @@ app.get('/logout', async (req, res) => {
 
 
 
-// create routes for Mainpage and product page
-
-app.get('/mainpage', async (req, res) => {
-    try{
-    res.render('index');
-    } catch(err){
-        console.log(err);
-    }
-});
 
 app.get('/product', async (req, res) => {
     try{
