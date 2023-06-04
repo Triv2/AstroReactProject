@@ -29,15 +29,7 @@
   * {
   box-sizing: border-box;
 }
- body {
-  font-family: Merriweather, serif;
-  margin: 0;
-  padding: 1rem;
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  background: #1b1f21;
-}
+
 
 img {
   width: 100%;
@@ -70,10 +62,8 @@ img {
 
 .item {
   --i: 0.5rem;
-  --c1: deeppink;
-  --c2: orange;
-  
-  background: repeating-linear-gradient(var(--a, 45deg), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2));
+ 
+  background: url("/aboutbg1.svg");
   display: grid;
   place-items: center;
   grid-template: 1fr / 1fr var(--innerTrack, 0);
@@ -93,20 +83,14 @@ img {
 
 .item:nth-child(2),
 .item:nth-child(3) {
-  --c2: darkorchid;
-  --p: 50% 100%;
-  background: repeating-radial-gradient(circle at var(--p), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2));
-}
+  }
 
 .item:nth-child(3) {
-  --p: 50% 0;
-  --c1: cornflowerblue;
+ 
 }
 
 .item:nth-child(4) {
-  --a: -45deg;
-  --c1: cornflowerblue;
-  --c2: turquoise;
+  
 }
 
 .item figcaption {

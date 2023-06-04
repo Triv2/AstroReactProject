@@ -55,10 +55,6 @@ header{
 }
 
 
-.gradientbg{
-  /* background: linear-gradient(#2596be,#032879,#0645ce,#010c24); */
-}
-
 /*second section*/
 
 
@@ -102,26 +98,8 @@ header{
   max-width:100%;
   
 }
-@media screen and (max-width:1000px){
-  /* .aboutbg{
-    max-width:100%;
-    aspect-ratio:0;
-  }
-  
- .aboutbg2{
-    max-width:100%;
-    aspect-ratio: 0;
- }
-  */
-}
 
 
-/* .box {
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .effect {
    /* width: 500ch;  */
