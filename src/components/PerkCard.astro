@@ -1,10 +1,7 @@
 ---
-
+const {title, img} = Astro.props;
 ---
-<section>
-  <article>
-    <figure><picture></picture>
-      <figcaption></figcaption>
-    </figure>
-  </article>
-</section>
+<article class = "item">
+  <figcaption>{title}</figcaption>
+  <figure class="img-wrapper"><img src={img}/></figure>
+</article>
