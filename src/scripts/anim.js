@@ -21,7 +21,7 @@ animateElements.forEach((el)=> observer.observe(el));
 
 const animateElements1 = document.querySelectorAll('.faderight');
 animateElements1.forEach((el)=> observer.observe(el));
-// entry.target.classList.toggle('show',entry.isIntersecting);
+
 
 
 
